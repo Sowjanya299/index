@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Sowjanya</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --bg:#0f172a;
+  --text:#e2e8f0;
+  --card:#1e293b;
+  --accent:#38bdf8;
+}
+
+body.light{
+  --bg:#ffffff;
+  --text:#0f172a;
+  --card:#f1f5f9;
+}
+
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 10%;
+  position:fixed;
+  width:100%;
+  background:var(--card);
+  top:0;
+  z-index:1000;
+}
+
+nav a{
+  margin:0 10px;
+  text-decoration:none;
+  color:var(--text);
+}
+
+section{
+  padding:120px 10% 80px;
+}
+
+.hero{
+  text-align:center;
+}
+
+.hero h1{
+  font-size:2.5rem;
+}
+
+.hero span{color:var(--accent);}
+
+.btn{
+  background:var(--accent);
+  color:#000;
+  padding:10px 20px;
+  border:none;
+  cursor:pointer;
+}
+
+.skills .bar{margin:10px 0;}
+.progress{background:#444;border-radius:20px;}
+.progress div{height:8px;background:var(--accent);} 
+
+.card{
+  background:var(--card);
+  padding:20px;
+  margin:10px 0;
+  border-radius:10px;
+}
+
+ul{padding-left:20px;}
+
+input,textarea{
+  width:100%;
+  padding:10px;
+  margin:5px 0;
+}
+
+footer{text-align:center;padding:20px;}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h3>Sowjanya</h3>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button onclick="toggleMode()">🌙</button>
+</header>
+
+<section id="home" class="hero">
+  <h1>Hi, I'm <span>Cheekatla Sowjanya</span></h1>
+  <p>Aspiring Software Engineer</p>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a motivated and ambitious individual looking to gain my first work experience. With a solid foundation in programming, primarily focused on Java, I aim to contribute meaningfully while further developing my skills in a practical environment. I am eager to learn new technologies and thrive in team settings, showcasing my organizational abilities through various competitive events.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="bar">C<div class="progress"><div style="width:80%"></div></div></div>
+  <div class="bar">Python<div class="progress"><div style="width:75%"></div></div></div>
+  <div class="bar">JavaScript<div class="progress"><div style="width:70%"></div></div></div>
+</section>
+
+<section id="projects">
+  <h2>GitHub Projects</h2>
+  <div class="card">Multi Object Detection Project</div>
+  <div class="card">Hand Tracking using Python & OpenCV (real-time gesture control)</div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    Participated in Google Cloud Generative AI (EduSkills)<br>
+    Completed 1M1B Green Internship<br>
+    AWS Data Engineering Virtual Internship (AICTE)
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="card">
+    <ul>
+      <li>Java Certification - NPTEL (MOE Govt. of India)</li>
+      <li>Python Certification - Infosys Springboard</li>
+      <li>Artificial Intelligence for Sustainability - IBM SkillsBuild</li>
+    </ul>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="card">
+    <ul>
+      <li>Participated in multiple technical and competitive events</li>
+      <li>Developed real-time projects in Computer Vision</li>
+      <li>Actively improving programming and problem-solving skills</li>
+      <li>One week values course on Internet of Things</li>
+      <li>Participated in National Level Students Tech Fest-Technical Quiz</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form>
+    <input type="text" placeholder="sowjanya">
+    <input type="email" placeholder="cheekatla sowjanya3@gmail.com">
+    <textarea placeholder="Message"></textarea>
+    <button class="btn">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Cheekatla Sowjanya</p>
+</footer>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle('light');
+}
+</script>
+
+</body>
+</html>
